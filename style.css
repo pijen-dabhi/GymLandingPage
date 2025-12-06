@@ -64,24 +64,32 @@ body {
   align-items: center;
   gap: 26px;
 }
-.nav-left a {
-  font-size: 15px;
-  text-decoration: none;
-  color: rgba(255,255,255,0.75);
+
+
+.nav-left a:hover::after { width: 100%; }
+nav a {
   position: relative;
-  transition: .22s;
+  text-decoration: none;
+  color: white;
+  padding: 5px 0;    /* keeps spacing stable */
 }
-.nav-left a:hover { color: #fff; }
-.nav-left a::after {
+
+nav a::after {
   content: "";
   position: absolute;
-  bottom: -6px;
-  width: 0%;
+  left: 50%;
+  bottom: -2px;
+  width: 0;
   height: 2px;
-  background: #fff;
-  transition: .25s;
+  background: white;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
 }
-.nav-left a:hover::after { width: 100%; }
+
+nav a:hover::after {
+  width: 40px;   /* underline length */
+}
+
 
 /* Logo */
 .logo-box {
@@ -1076,6 +1084,10 @@ margin-bottom: 10px;
 
 .scroll-up i {
     font-size: 18px;
+}
+.scroll-up a{
+    text-decoration: none;
+    color: white;
 }
 
 .success-section {
