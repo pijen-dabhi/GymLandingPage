@@ -1085,6 +1085,7 @@ margin-bottom: 10px;
 .scroll-up i {
     font-size: 18px;
 }
+
 .scroll-up a {
     display: flex;
     justify-content: center;
@@ -1094,7 +1095,6 @@ margin-bottom: 10px;
     text-decoration: none;
     color: white;
 }
-
 
 .success-section {
     background: #d8c628;
@@ -1509,4 +1509,3 @@ margin-bottom: 10px;
   h2 { font-size: 22px; }
   p  { font-size: 12px; }
 }
-
